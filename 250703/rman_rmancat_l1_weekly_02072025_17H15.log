@@ -1,0 +1,353 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Wed Jul 2 17:15:04 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: RMANCAT (DBID=3914110385)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=103 instance=rmancat1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch2
+channel ch2: SID=97 instance=rmancat1 device type=SBT_TAPE
+channel ch2: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 02-JUL-25
+current log archived
+
+backup will be obsolete on date 09-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00006 name=+DG_META4/rmancat/datafile/rman_data.276.1054228373
+input datafile file number=00002 name=+DG_META4/rmancat/datafile/sysaux.286.1054229821
+input datafile file number=00007 name=+DG_META4/rmancat/datafile/oranev01_odbprac_12c.277.1054228383
+channel ch1: starting piece 1 at 02-JUL-25
+channel ch2: starting compressed incremental level 1 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+input datafile file number=00001 name=+DG_META4/rmancat/datafile/system.285.1054229791
+input datafile file number=00008 name=+DG_META4/rmancat/datafile/undotb2.282.1054229075
+input datafile file number=00009 name=+DG_META4/rmancat/datafile/undotb1.283.1054229095
+input datafile file number=00004 name=+DG_META4/rmancat/datafile/users.275.1054228369
+channel ch2: starting piece 1 at 02-JUL-25
+channel ch2: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g33tio94_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:03:35
+channel ch2: starting compressed incremental level 1 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+channel ch1: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g23tio94_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:03:37
+including current control file in backup set
+channel ch2: starting piece 1 at 02-JUL-25
+channel ch2: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g43tiofs_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:00:25
+
+backup will be obsolete on date 09-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed full datafile backup set
+channel ch1: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel ch1: starting piece 1 at 02-JUL-25
+channel ch1: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g53tiogm_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+
+current log archived
+backup will be obsolete on date 09-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed archived log backup set
+channel ch1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=23987 RECID=49677 STAMP=1205428508
+channel ch1: starting piece 1 at 02-JUL-25
+channel ch2: starting compressed archived log backup set
+channel ch2: specifying archived log(s) in backup set
+input archived log thread=1 sequence=25693 RECID=49679 STAMP=1205428769
+input archived log thread=2 sequence=23988 RECID=49678 STAMP=1205428766
+channel ch2: starting piece 1 at 02-JUL-25
+channel ch1: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g63tioh1_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+channel ch2: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g73tioh1_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:00:07
+
+backup will be obsolete on date 09-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed full datafile backup set
+channel ch1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ch1: starting piece 1 at 02-JUL-25
+channel ch1: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g83tioh9_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+Finished backup at 02-JUL-25
+
+Starting backup at 02-JUL-25
+current log archived
+backup will be obsolete on date 09-JUL-25
+archived logs required to recover from this backup will be backed up
+skipping archived log of thread 1 with sequence 25693; already backed up
+skipping archived logs of thread 2 from sequence 23987 to 23988; already backed up
+channel ch1: starting compressed archived log backup set
+channel ch1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=25687 RECID=49668 STAMP=1205323230
+input archived log thread=2 sequence=23983 RECID=49667 STAMP=1205309407
+input archived log thread=2 sequence=23984 RECID=49671 STAMP=1205359243
+input archived log thread=1 sequence=25688 RECID=49669 STAMP=1205359228
+input archived log thread=1 sequence=25689 RECID=49670 STAMP=1205359240
+channel ch1: starting piece 1 at 02-JUL-25
+channel ch2: starting compressed archived log backup set
+channel ch2: specifying archived log(s) in backup set
+input archived log thread=1 sequence=25690 RECID=49672 STAMP=1205362808
+input archived log thread=2 sequence=23985 RECID=49673 STAMP=1205362810
+input archived log thread=1 sequence=25691 RECID=49675 STAMP=1205406006
+input archived log thread=2 sequence=23986 RECID=49674 STAMP=1205392554
+input archived log thread=1 sequence=25692 RECID=49676 STAMP=1205428506
+input archived log thread=2 sequence=23989 RECID=49681 STAMP=1205428790
+channel ch2: starting piece 1 at 02-JUL-25
+channel ch2: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_ga3tiohq_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:00:15
+channel ch2: deleting archived log(s)
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_01/thread_1_seq_25690.12311.1205362807 RECID=49672 STAMP=1205362808
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_01/thread_2_seq_23985.12742.1205362809 RECID=49673 STAMP=1205362810
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_1_seq_25691.12793.1205406007 RECID=49675 STAMP=1205406006
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_2_seq_23986.12723.1205392555 RECID=49674 STAMP=1205392554
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_1_seq_25692.12776.1205428507 RECID=49676 STAMP=1205428506
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_2_seq_23989.11046.1205428791 RECID=49681 STAMP=1205428790
+channel ch2: starting compressed archived log backup set
+channel ch2: specifying archived log(s) in backup set
+input archived log thread=1 sequence=25694 RECID=49680 STAMP=1205428788
+channel ch2: starting piece 1 at 02-JUL-25
+channel ch1: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g93tiohp_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:19
+channel ch1: deleting archived log(s)
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_01/thread_1_seq_25687.9680.1205323231 RECID=49668 STAMP=1205323230
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_01/thread_2_seq_23983.12685.1205309407 RECID=49667 STAMP=1205309407
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_01/thread_2_seq_23984.11922.1205359243 RECID=49671 STAMP=1205359243
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_01/thread_1_seq_25688.4000.1205359229 RECID=49669 STAMP=1205359228
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_01/thread_1_seq_25689.12567.1205359241 RECID=49670 STAMP=1205359240
+channel ch1: deleting archived log(s)
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_1_seq_25693.10112.1205428769 RECID=49679 STAMP=1205428769
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_2_seq_23987.11595.1205428509 RECID=49677 STAMP=1205428508
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_2_seq_23988.11788.1205428767 RECID=49678 STAMP=1205428766
+channel ch2: finished piece 1 at 02-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_gb3tioi9_1_1.vab tag=FULL_RMANCAT_29062025_16H57 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:00:08
+channel ch2: deleting archived log(s)
+archived log file name=+DG_FRA/rmancat/archivelog/2025_07_02/thread_1_seq_25694.11022.1205428787 RECID=49680 STAMP=1205428788
+Finished backup at 02-JUL-25
+
+released channel: ch1
+
+released channel: ch2
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to redundancy 1
+allocated channel: ORA_SBT_TAPE_1
+channel ORA_SBT_TAPE_1: SID=103 instance=rmancat1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_1: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_2
+channel ORA_SBT_TAPE_2: SID=97 instance=rmancat1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_2: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_3
+channel ORA_SBT_TAPE_3: SID=13 instance=rmancat1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_3: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_4
+channel ORA_SBT_TAPE_4: SID=43 instance=rmancat1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_4: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=67 instance=rmancat1 device type=DISK
+Deleting the following obsolete backups and copies:
+Type                 Key    Completion Time    Filename/Handle
+-------------------- ------ ------------------ --------------------
+Control File Copy     1      03-MAR-15          /orafile/rmancat_control.dbf
+Backup Set           14618  24-JUN-25         
+  Backup Piece       14618  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_df3sr3jf_1_1.vab
+Backup Set           14619  24-JUN-25         
+  Backup Piece       14619  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dg3sr3jf_1_1.vab
+Backup Set           14620  24-JUN-25         
+  Backup Piece       14620  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dh3sr3tb_1_1.vab
+Backup Set           14621  24-JUN-25         
+  Backup Piece       14621  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_di3sr3to_1_1.vab
+Backup Set           14622  24-JUN-25         
+  Backup Piece       14622  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dj3sr3uu_1_1.vab
+Backup Set           14623  24-JUN-25         
+  Backup Piece       14623  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dk3sr3uv_1_1.vab
+Backup Set           14624  24-JUN-25         
+  Backup Piece       14624  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dl3sr3vh_1_1.vab
+Backup Set           14626  24-JUN-25         
+  Backup Piece       14626  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dm3sr40p_1_1.vab
+Backup Set           14625  24-JUN-25         
+  Backup Piece       14625  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dn3sr40s_1_1.vab
+Backup Set           14627  24-JUN-25         
+  Backup Piece       14627  24-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_do3sr42d_1_1.vab
+Backup Set           14629  25-JUN-25         
+  Backup Piece       14629  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_dt3sstik_1_1.vab
+Backup Set           14628  25-JUN-25         
+  Backup Piece       14628  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_du3sstik_1_1.vab
+Backup Set           14630  25-JUN-25         
+  Backup Piece       14630  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_dv3ssto3_1_1.vab
+Backup Set           14631  25-JUN-25         
+  Backup Piece       14631  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e03sstoc_1_1.vab
+Backup Set           14633  25-JUN-25         
+  Backup Piece       14633  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e13sstol_1_1.vab
+Backup Set           14632  25-JUN-25         
+  Backup Piece       14632  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e23sstol_1_1.vab
+Backup Set           14634  25-JUN-25         
+  Backup Piece       14634  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e33sstot_1_1.vab
+Backup Set           14636  25-JUN-25         
+  Backup Piece       14636  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e43sstpa_1_1.vab
+Backup Set           14635  25-JUN-25         
+  Backup Piece       14635  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e53sstpb_1_1.vab
+Backup Set           14637  25-JUN-25         
+  Backup Piece       14637  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e63sstpi_1_1.vab
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_df3sr3jf_1_1.vab RECID=14618 STAMP=1204653679
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dg3sr3jf_1_1.vab RECID=14619 STAMP=1204653679
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dh3sr3tb_1_1.vab RECID=14620 STAMP=1204653998
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_di3sr3to_1_1.vab RECID=14621 STAMP=1204654008
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dj3sr3uu_1_1.vab RECID=14622 STAMP=1204654046
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dk3sr3uv_1_1.vab RECID=14623 STAMP=1204654048
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dl3sr3vh_1_1.vab RECID=14624 STAMP=1204654068
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dm3sr40p_1_1.vab RECID=14626 STAMP=1204654108
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_dn3sr40s_1_1.vab RECID=14625 STAMP=1204654111
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250624_do3sr42d_1_1.vab RECID=14627 STAMP=1204654158
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_dt3sstik_1_1.vab RECID=14629 STAMP=1204713044
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_du3sstik_1_1.vab RECID=14628 STAMP=1204713044
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_dv3ssto3_1_1.vab RECID=14630 STAMP=1204713220
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e03sstoc_1_1.vab RECID=14631 STAMP=1204713228
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e13sstol_1_1.vab RECID=14633 STAMP=1204713237
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e23sstol_1_1.vab RECID=14632 STAMP=1204713238
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e33sstot_1_1.vab RECID=14634 STAMP=1204713246
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e43sstpa_1_1.vab RECID=14636 STAMP=1204713259
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e53sstpb_1_1.vab RECID=14635 STAMP=1204713259
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250625_e63sstpi_1_1.vab RECID=14637 STAMP=1204713266
+Deleted 20 objects
+
+
+RMAN-06207: WARNING: 1 objects could not be deleted for DISK channel(s) due
+RMAN-06208:          to mismatched status.  Use CROSSCHECK command to fix status
+RMAN-06210: List of Mismatched objects
+RMAN-06211: ==========================
+RMAN-06212:   Object Type   Filename/Handle
+RMAN-06213: --------------- ---------------------------------------------------
+RMAN-06214: Datafile Copy   /orafile/rmancat_control.dbf
+
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14670   Full    8.00M      SBT_TAPE    00:00:10     29-JUN-25      
+        BP Key: 14670   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_3914110385_RMANCAT_20250629_ff3t865q_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-SEP-25      
+  SPFILE Included: Modification time: 09-JUN-25
+  SPFILE db_unique_name: RMANCAT
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14680   Full    8.00M      SBT_TAPE    00:00:10     30-JUN-25      
+        BP Key: 14680   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250630_fp3tbffd_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  SPFILE Included: Modification time: 09-JUN-25
+  SPFILE db_unique_name: RMANCAT
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14690   Full    8.00M      SBT_TAPE    00:00:05     02-JUL-25      
+        BP Key: 14690   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g53tiogm_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 09-JUL-25      
+  SPFILE Included: Modification time: 02-JUL-25
+  SPFILE db_unique_name: RMANCAT
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14669   Incr 0  16.00M     SBT_TAPE    00:00:11     29-JUN-25      
+        BP Key: 14669   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_3914110385_RMANCAT_20250629_fe3t865a_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-SEP-25      
+  Control File Included: Ckp SCN: 780715888    Ckp time: 29-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14673   Full    16.00M     SBT_TAPE    00:00:16     29-JUN-25      
+        BP Key: 14673   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_3914110385_RMANCAT_20250629_fi3t866u_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-SEP-25      
+  Control File Included: Ckp SCN: 780716127    Ckp time: 29-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14679   Incr 1  16.00M     SBT_TAPE    00:00:14     30-JUN-25      
+        BP Key: 14679   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250630_fo3tbfet_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  Control File Included: Ckp SCN: 780954514    Ckp time: 30-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14683   Full    16.00M     SBT_TAPE    00:00:30     30-JUN-25      
+        BP Key: 14683   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250630_fs3tbfgr_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  Control File Included: Ckp SCN: 780954602    Ckp time: 30-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14689   Incr 1  16.00M     SBT_TAPE    00:00:17     02-JUL-25      
+        BP Key: 14689   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g43tiofs_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 09-JUL-25      
+  Control File Included: Ckp SCN: 781239410    Ckp time: 02-JUL-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14693   Full    16.00M     SBT_TAPE    00:00:06     02-JUL-25      
+        BP Key: 14693   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g83tioh9_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 09-JUL-25      
+  Control File Included: Ckp SCN: 781239467    Ckp time: 02-JUL-25
+
+RMAN> 
+
+Recovery Manager complete.

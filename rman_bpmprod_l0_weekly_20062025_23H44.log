@@ -1,0 +1,69 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Fri Jun 20 23:44:21 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: BPMPROD (DBID=1062634547)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 14> 15> 16> 17> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=1459 instance=bpmprod1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch2
+channel ch2: SID=15 instance=bpmprod1 device type=SBT_TAPE
+channel ch2: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch3
+channel ch3: SID=315 instance=bpmprod1 device type=SBT_TAPE
+channel ch3: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch4
+channel ch4: SID=597 instance=bpmprod1 device type=SBT_TAPE
+channel ch4: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch5
+channel ch5: SID=883 instance=bpmprod1 device type=SBT_TAPE
+channel ch5: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch6
+channel ch6: SID=1171 instance=bpmprod1 device type=SBT_TAPE
+channel ch6: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 20-JUN-25
+current log archived
+
+backup will be obsolete on date 20-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 0 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00003 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.282.1049770611
+backing up blocks 1 through 2621440
+channel ch1: starting piece 1 at 20-JUN-25
+channel ch2: starting compressed incremental level 0 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+input datafile file number=00026 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.262.1049770057
+backing up blocks 1 through 2621440
+channel ch2: starting piece 1 at 20-JUN-25
+channel ch3: starting compressed incremental level 0 datafile backup set
+channel ch3: specifying datafile(s) in backup set
+input datafile file number=00027 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.263.1049770057
+backing up blocks 1 through 2621440
+channel ch3: starting piece 1 at 20-JUN-25
+channel ch4: starting compressed incremental level 0 datafile backup set
+channel ch4: specifying datafile(s) in backup set
+input datafile file number=00028 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.264.1049770113
+backing up blocks 1 through 2621440
+channel ch4: starting piece 1 at 20-JUN-25
+channel ch5: starting compressed incremental level 0 datafile backup set
+channel ch5: specifying datafile(s) in backup set
+input datafile file number=00029 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.265.1049770113
+backing up blocks 1 through 2621440
+channel ch5: starting piece 1 at 20-JUN-25
+channel ch6: starting compressed incremental level 0 datafile backup set
+channel ch6: specifying datafile(s) in backup set
+input datafile file number=00031 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.284.1049770647
+backing up blocks 1 through 2621440
+channel ch6: starting piece 1 at 20-JUN-25

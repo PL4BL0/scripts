@@ -1,0 +1,381 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Thu Jul 3 11:37:52 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: ASDB (DBID=2264190148)
+
+RMAN> 2> 3> 4> 5> 6> 7> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=203 instance=asdb1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 03-JUL-25
+current log archived
+
+backup will be obsolete on date 10-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00002 name=+DG_ASDB/asdb/datafile/sysaux.305.1074797013
+input datafile file number=00005 name=+DG_ASDB/asdb/datafile/sysaux.306.1074797079
+input datafile file number=00001 name=+DG_ASDB/asdb/datafile/system.293.1049777703
+input datafile file number=00042 name=+DG_ASDB/asdb/datafile/undotb1.295.1049778199
+input datafile file number=00043 name=+DG_ASDB/asdb/datafile/undotb2.296.1049778259
+input datafile file number=00003 name=+DG_ASDB/asdb/datafile/sysaux.294.1049777731
+input datafile file number=00010 name=+DG_ASDB/asdb/datafile/ias_meta.261.1049775497
+input datafile file number=00041 name=+DG_ASDB/asdb/datafile/ias_meta.262.1049775497
+input datafile file number=00040 name=+DG_ASDB/asdb/datafile/olts_attrstore.286.1049777101
+input datafile file number=00039 name=+DG_ASDB/asdb/datafile/olts_attrstore.287.1049777101
+input datafile file number=00013 name=+DG_ASDB/asdb/datafile/dcm.267.1049775851
+input datafile file number=00026 name=+DG_ASDB/asdb/datafile/olts_ct_store.290.1049777271
+input datafile file number=00006 name=+DG_ASDB/asdb/datafile/portal.257.1049774987
+input datafile file number=00027 name=+DG_ASDB/asdb/datafile/olts_default.291.1049777347
+input datafile file number=00017 name=+DG_ASDB/asdb/datafile/b2b_dt.274.1049776315
+input datafile file number=00016 name=+DG_ASDB/asdb/datafile/b2b_rt.271.1049776185
+input datafile file number=00024 name=+DG_ASDB/asdb/datafile/olts_attrstore.288.1049777105
+input datafile file number=00023 name=+DG_ASDB/asdb/datafile/uddisys_ts.285.1049777013
+input datafile file number=00008 name=+DG_ASDB/asdb/datafile/portal_idx.259.1049775207
+input datafile file number=00018 name=+DG_ASDB/asdb/datafile/b2b_idx.276.1049776561
+input datafile file number=00020 name=+DG_ASDB/asdb/datafile/orabpel.280.1049776751
+input datafile file number=00019 name=+DG_ASDB/asdb/datafile/b2b_lob.278.1049776661
+input datafile file number=00021 name=+DG_ASDB/asdb/datafile/bam.281.1049776843
+input datafile file number=00014 name=+DG_ASDB/asdb/datafile/dsgateway_tab.269.1049775961
+input datafile file number=00029 name=+DG_ASDB/asdb/datafile/bam.282.1049776843
+input datafile file number=00030 name=+DG_ASDB/asdb/datafile/b2b_dt.275.1049776315
+input datafile file number=00031 name=+DG_ASDB/asdb/datafile/b2b_idx.277.1049776561
+input datafile file number=00032 name=+DG_ASDB/asdb/datafile/b2b_lob.279.1049776661
+input datafile file number=00033 name=+DG_ASDB/asdb/datafile/b2b_rt.272.1049776185
+input datafile file number=00034 name=+DG_ASDB/asdb/datafile/b2b_rt.273.1049776187
+input datafile file number=00035 name=+DG_ASDB/asdb/datafile/dcm.268.1049775851
+input datafile file number=00036 name=+DG_ASDB/asdb/datafile/disco_ptm5_cache.265.1049775739
+input datafile file number=00037 name=+DG_ASDB/asdb/datafile/disco_ptm5_meta.263.1049775633
+input datafile file number=00038 name=+DG_ASDB/asdb/datafile/ocats.283.1049776925
+input datafile file number=00028 name=+DG_ASDB/asdb/datafile/olts_svrmgstore.292.1049777435
+input datafile file number=00004 name=+DG_ASDB/asdb/datafile/users.256.1049774823
+input datafile file number=00011 name=+DG_ASDB/asdb/datafile/disco_ptm5_meta.264.1049775633
+input datafile file number=00012 name=+DG_ASDB/asdb/datafile/disco_ptm5_cache.266.1049775739
+input datafile file number=00015 name=+DG_ASDB/asdb/datafile/wcrsys_ts.270.1049776075
+input datafile file number=00022 name=+DG_ASDB/asdb/datafile/ocats.284.1049776925
+input datafile file number=00007 name=+DG_ASDB/asdb/datafile/portal_doc.258.1049775095
+input datafile file number=00009 name=+DG_ASDB/asdb/datafile/portal_log.260.1049775315
+input datafile file number=00025 name=+DG_ASDB/asdb/datafile/olts_battrstore.289.1049777195
+channel ch1: starting piece 1 at 03-JUL-25
+channel ch1: finished piece 1 at 03-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_ov3tkotb_1_1.vab tag=FULL_ASDB_29062025_17H12 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:03:05
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ch1: starting piece 1 at 03-JUL-25
+channel ch1: finished piece 1 at 03-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p03tkp34_1_1.vab tag=FULL_ASDB_29062025_17H12 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+
+backup will be obsolete on date 10-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed full datafile backup set
+channel ch1: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel ch1: starting piece 1 at 03-JUL-25
+channel ch1: finished piece 1 at 03-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p13tkp3d_1_1.vab tag=FULL_ASDB_29062025_17H12 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+
+current log archived
+backup will be obsolete on date 10-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed archived log backup set
+channel ch1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=24531 RECID=69404 STAMP=1205494678
+input archived log thread=1 sequence=28442 RECID=69405 STAMP=1205494902
+input archived log thread=2 sequence=24532 RECID=69406 STAMP=1205494902
+channel ch1: starting piece 1 at 03-JUL-25
+channel ch1: finished piece 1 at 03-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p23tkp3n_1_1.vab tag=FULL_ASDB_29062025_17H12 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+
+backup will be obsolete on date 10-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed full datafile backup set
+channel ch1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ch1: starting piece 1 at 03-JUL-25
+channel ch1: finished piece 1 at 03-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p33tkp3u_1_1.vab tag=FULL_ASDB_29062025_17H12 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+Finished backup at 03-JUL-25
+
+Starting backup at 03-JUL-25
+current log archived
+backup will be obsolete on date 10-JUL-25
+archived logs required to recover from this backup will be backed up
+skipping archived log of thread 1 with sequence 28442; already backed up
+skipping archived logs of thread 2 from sequence 24531 to 24532; already backed up
+channel ch1: starting compressed archived log backup set
+channel ch1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=28438 RECID=69399 STAMP=1205395216
+input archived log thread=2 sequence=24530 RECID=69401 STAMP=1205442023
+input archived log thread=1 sequence=28439 RECID=69400 STAMP=1205442020
+input archived log thread=1 sequence=28440 RECID=69402 STAMP=1205483408
+input archived log thread=1 sequence=28441 RECID=69403 STAMP=1205494676
+input archived log thread=1 sequence=28443 RECID=69407 STAMP=1205494932
+input archived log thread=2 sequence=24533 RECID=69408 STAMP=1205494932
+channel ch1: starting piece 1 at 03-JUL-25
+channel ch1: finished piece 1 at 03-JUL-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p43tkp4l_1_1.vab tag=FULL_ASDB_29062025_17H12 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:45
+channel ch1: deleting archived log(s)
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_02/thread_1_seq_28438.10678.1205395215 RECID=69399 STAMP=1205395216
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_02/thread_2_seq_24530.11022.1205442023 RECID=69401 STAMP=1205442023
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_02/thread_1_seq_28439.11788.1205442021 RECID=69400 STAMP=1205442020
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_03/thread_1_seq_28440.12106.1205483407 RECID=69402 STAMP=1205483408
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_03/thread_1_seq_28441.11169.1205494677 RECID=69403 STAMP=1205494676
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_03/thread_1_seq_28443.12372.1205494933 RECID=69407 STAMP=1205494932
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_03/thread_2_seq_24533.12735.1205494933 RECID=69408 STAMP=1205494932
+channel ch1: deleting archived log(s)
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_03/thread_1_seq_28442.12025.1205494903 RECID=69405 STAMP=1205494902
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_03/thread_2_seq_24531.12728.1205494677 RECID=69404 STAMP=1205494678
+archived log file name=+DG_FRA/asdb/archivelog/2025_07_03/thread_2_seq_24532.4106.1205494903 RECID=69406 STAMP=1205494902
+Finished backup at 03-JUL-25
+
+released channel: ch1
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to redundancy 1
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=203 instance=asdb1 device type=DISK
+allocated channel: ORA_DISK_2
+channel ORA_DISK_2: SID=9 instance=asdb1 device type=DISK
+allocated channel: ORA_SBT_TAPE_1
+channel ORA_SBT_TAPE_1: SID=1151 instance=asdb1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_1: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_2
+channel ORA_SBT_TAPE_2: SID=773 instance=asdb1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_2: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_3
+channel ORA_SBT_TAPE_3: SID=969 instance=asdb1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_3: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_4
+channel ORA_SBT_TAPE_4: SID=390 instance=asdb1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_4: Veeam Plug-in for Oracle RMAN
+Deleting the following obsolete backups and copies:
+Type                 Key    Completion Time    Filename/Handle
+-------------------- ------ ------------------ --------------------
+Backup Set           26262  27-DEC-24         
+  Backup Piece       44692  27-DEC-24          qf3dp155_1_2
+Backup Set           26265  27-DEC-24         
+  Backup Piece       44694  27-DEC-24          c-2264190148-20241227-00_RMAN_AUTOBACKUP.vab
+Backup Set           26266  27-DEC-24         
+  Backup Piece       44695  27-DEC-24          c-2264190148-20241227-01_RMAN_AUTOBACKUP.vab
+Backup Set           26477  07-FEB-25         
+  Backup Piece       44906  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_163h6pf5_1_1.vab
+Backup Set           26478  07-FEB-25         
+  Backup Piece       44907  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_173h6pjn_1_1.vab
+Backup Set           26479  07-FEB-25         
+  Backup Piece       44908  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_183h6pjv_1_1.vab
+Backup Set           26480  07-FEB-25         
+  Backup Piece       44909  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_193h6pk9_1_1.vab
+Backup Set           26481  07-FEB-25         
+  Backup Piece       44910  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1a3h6pko_1_1.vab
+Backup Set           26482  07-FEB-25         
+  Backup Piece       44911  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1b3h6pli_1_1.vab
+Backup Set           26483  07-FEB-25         
+  Backup Piece       44912  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1c3h7s9m_1_1.vab
+Backup Set           26484  07-FEB-25         
+  Backup Piece       44913  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1d3h7sm1_1_1.vab
+Backup Set           26485  07-FEB-25         
+  Backup Piece       44914  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1e3h7sma_1_1.vab
+Backup Set           26486  07-FEB-25         
+  Backup Piece       44915  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1f3h7smk_1_1.vab
+Backup Set           26487  07-FEB-25         
+  Backup Piece       44916  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1g3h7sn3_1_1.vab
+Backup Set           26488  07-FEB-25         
+  Backup Piece       44917  07-FEB-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1h3h7so1_1_1.vab
+Backup Set           27185  25-JUN-25         
+  Backup Piece       45614  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nh3ssudn_1_1.vab
+Backup Set           27186  25-JUN-25         
+  Backup Piece       45615  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_ni3ssukp_1_1.vab
+Backup Set           27187  25-JUN-25         
+  Backup Piece       45616  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nj3ssul1_1_1.vab
+Backup Set           27188  25-JUN-25         
+  Backup Piece       45617  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nk3ssulc_1_1.vab
+Backup Set           27189  25-JUN-25         
+  Backup Piece       45618  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nl3ssulj_1_1.vab
+Backup Set           27190  25-JUN-25         
+  Backup Piece       45619  25-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nm3ssumk_1_1.vab
+Backup Set           27191  26-JUN-25         
+  Backup Piece       45620  26-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_no3svhoq_1_1.vab
+Backup Set           27192  26-JUN-25         
+  Backup Piece       45621  26-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_np3svhuk_1_1.vab
+Backup Set           27193  26-JUN-25         
+  Backup Piece       45622  26-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_nq3svhus_1_1.vab
+Backup Set           27194  26-JUN-25         
+  Backup Piece       45623  26-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_nr3svhv6_1_1.vab
+Backup Set           27195  26-JUN-25         
+  Backup Piece       45624  26-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_ns3svhvl_1_1.vab
+Backup Set           27196  26-JUN-25         
+  Backup Piece       45625  26-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_nt3svi0f_1_1.vab
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nh3ssudn_1_1.vab RECID=45614 STAMP=1204713912
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_ni3ssukp_1_1.vab RECID=45615 STAMP=1204714138
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nj3ssul1_1_1.vab RECID=45616 STAMP=1204714145
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nk3ssulc_1_1.vab RECID=45617 STAMP=1204714156
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nl3ssulj_1_1.vab RECID=45618 STAMP=1204714164
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250625_nm3ssumk_1_1.vab RECID=45619 STAMP=1204714197
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_no3svhoq_1_1.vab RECID=45620 STAMP=1204799259
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_np3svhuk_1_1.vab RECID=45621 STAMP=1204799445
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_nq3svhus_1_1.vab RECID=45622 STAMP=1204799452
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_nr3svhv6_1_1.vab RECID=45623 STAMP=1204799462
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_ns3svhvl_1_1.vab RECID=45624 STAMP=1204799478
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250626_nt3svi0f_1_1.vab RECID=45625 STAMP=1204799503
+Deleted 12 objects
+
+
+RMAN-06207: WARNING: 15 objects could not be deleted for SBT_TAPE channel(s) due
+RMAN-06208:          to mismatched status.  Use CROSSCHECK command to fix status
+RMAN-06210: List of Mismatched objects
+RMAN-06211: ==========================
+RMAN-06212:   Object Type   Filename/Handle
+RMAN-06213: --------------- ---------------------------------------------------
+RMAN-06214: Backup Piece    qf3dp155_1_2
+RMAN-06214: Backup Piece    c-2264190148-20241227-00_RMAN_AUTOBACKUP.vab
+RMAN-06214: Backup Piece    c-2264190148-20241227-01_RMAN_AUTOBACKUP.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_163h6pf5_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_173h6pjn_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_183h6pjv_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_193h6pk9_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1a3h6pko_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1b3h6pli_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1c3h7s9m_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1d3h7sm1_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1e3h7sma_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1f3h7smk_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1g3h7sn3_1_1.vab
+RMAN-06214: Backup Piece    3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250207_1h3h7so1_1_1.vab
+
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27211   Full    8.00M      SBT_TAPE    00:00:15     29-JUN-25      
+        BP Key: 45640   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_2264190148_ASDB_20250629_oe3t87tp_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-JUN-35      
+  SPFILE Included: Modification time: 28-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27217   Full    8.00M      SBT_TAPE    00:00:07     30-JUN-25      
+        BP Key: 45646   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250630_ok3tb8ii_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  SPFILE Included: Modification time: 28-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27223   Full    8.00M      SBT_TAPE    00:00:04     01-JUL-25      
+        BP Key: 45652   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250701_oq3tgha9_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 08-JUL-25      
+  SPFILE Included: Modification time: 28-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27229   Full    8.00M      SBT_TAPE    00:00:04     03-JUL-25      
+        BP Key: 45658   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p13tkp3d_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 10-JUL-25      
+  SPFILE Included: Modification time: 28-JUN-25
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27210   Incr 0  16.00M     SBT_TAPE    00:00:10     29-JUN-25      
+        BP Key: 45639   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_2264190148_ASDB_20250629_od3t87t8_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-JUN-35      
+  Control File Included: Ckp SCN: 2503262514   Ckp time: 29-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27213   Full    16.00M     SBT_TAPE    00:00:12     29-JUN-25      
+        BP Key: 45642   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_2264190148_ASDB_20250629_og3t87v6_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-JUN-35      
+  Control File Included: Ckp SCN: 2503262622   Ckp time: 29-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27216   Incr 1  16.00M     SBT_TAPE    00:00:16     30-JUN-25      
+        BP Key: 45645   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250630_oj3tb8i2_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  Control File Included: Ckp SCN: 2503549616   Ckp time: 30-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27219   Full    16.00M     SBT_TAPE    00:00:25     30-JUN-25      
+        BP Key: 45648   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250630_om3tb8jm_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  Control File Included: Ckp SCN: 2503549730   Ckp time: 30-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27222   Incr 1  16.00M     SBT_TAPE    00:00:06     01-JUL-25      
+        BP Key: 45651   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250701_op3tgha1_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 08-JUL-25      
+  Control File Included: Ckp SCN: 2503858245   Ckp time: 01-JUL-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27225   Full    16.00M     SBT_TAPE    00:00:06     01-JUL-25      
+        BP Key: 45654   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250701_os3tghb2_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 08-JUL-25      
+  Control File Included: Ckp SCN: 2503858303   Ckp time: 01-JUL-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27228   Incr 1  16.00M     SBT_TAPE    00:00:07     03-JUL-25      
+        BP Key: 45657   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p03tkp34_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 10-JUL-25      
+  Control File Included: Ckp SCN: 2504412948   Ckp time: 03-JUL-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27231   Full    16.00M     SBT_TAPE    00:00:06     03-JUL-25      
+        BP Key: 45660   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_29062025_17H12
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250703_p33tkp3u_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 10-JUL-25      
+  Control File Included: Ckp SCN: 2504412982   Ckp time: 03-JUL-25
+
+RMAN> 
+
+Recovery Manager complete.

@@ -1,0 +1,22 @@
+-------- 03-06-2025 23:06:27 ----------
+warning: Skipping file /home/ec2-user. File/Directory is not readable.
+warning: Skipping file /home/mfacal. File/Directory is not readable.
+warning: Skipping file /home/mqhub. File/Directory is not readable.
+warning: Skipping file /home/mquser. File/Directory is not readable.
+warning: Skipping file /home/splunk. File/Directory is not readable.
+warning: Skipping file /home/ldelloni. File/Directory is not readable.
+warning: Skipping file /home/u0150741. File/Directory is not readable.
+warning: Skipping file /home/u0108906. File/Directory is not readable.
+warning: Skipping file /home/u0133533. File/Directory is not readable.
+warning: Skipping file /home/u0117591. File/Directory is not readable.
+warning: Skipping file /home/u0101136. File/Directory is not readable.
+warning: Skipping file /home/u0161388. File/Directory is not readable.
+warning: Skipping file /mqprodha/mqm/.bash_history. File/Directory is not readable.
+warning: Skipping file /mqprodha/mqm/.config. File/Directory is not readable.
+warning: Skipping file /mqprodha/mqm/.java/.userPrefs. File/Directory is not readable.
+upload failed: ../../mqprodha/qmdata/TNQMPROD/queues/TN!GCLI!INFORMES!LIMITES!PR!BATCH!SOL to s3://backup-core-nx/mqprod/diario/03-06-2025/mqprodha/qmdata/TNQMPROD/queues/TN!GCLI!INFORMES!LIMITES!PR!BATCH!SOL AWS_ERROR_S3_INCORRECT_CONTENT_LENGTH: Request body length must match Content-Length header.
+upload failed: ../../mqprodha/qmdata/TNQMPROD/queues/TN!GCLI!NOTIFICA!DATOS!EVALU!SOL to s3://backup-core-nx/mqprod/diario/03-06-2025/mqprodha/qmdata/TNQMPROD/queues/TN!GCLI!NOTIFICA!DATOS!EVALU!SOL AWS_ERROR_S3_INCORRECT_CONTENT_LENGTH: Request body length must match Content-Length header.
+upload failed: ../../mqprodha/qmdata/TNQMPROD/queues/TN!SCEL!BAJAS!DEBITOS!GENERADAS!SOL to s3://backup-core-nx/mqprod/diario/03-06-2025/mqprodha/qmdata/TNQMPROD/queues/TN!SCEL!BAJAS!DEBITOS!GENERADAS!SOL AWS_ERROR_S3_INCORRECT_CONTENT_LENGTH: Request body length must match Content-Length header.
+warning: Skipping file /home/srvbackup/.sh_history. File/Directory is not readable.
+warning: Skipping file /home/srvbackup/.lesshst. File/Directory is not readable.
+warning: Skipping file /home/srvbackup/.aws/config. File/Directory is not readable.

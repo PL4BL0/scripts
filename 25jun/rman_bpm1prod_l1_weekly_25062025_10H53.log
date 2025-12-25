@@ -1,0 +1,362 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Wed Jun 25 10:53:57 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: BPM1PROD (DBID=1562024455)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=537 instance=bpm1prod1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch2
+channel ch2: SID=885 instance=bpm1prod1 device type=SBT_TAPE
+channel ch2: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 25-JUN-25
+current log archived
+
+backup will be obsolete on date 02-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00005 name=+DG_BPM1PROD/bpm1prod/datafile/users.298.1067258611
+input datafile file number=00018 name=+DG_BPM1PROD/bpm1prod/datafile/users.273.1046539957
+input datafile file number=00021 name=+DG_BPM1PROD/bpm1prod/datafile/users.276.1046540617
+input datafile file number=00024 name=+DG_BPM1PROD/bpm1prod/datafile/users.300.1071825603
+input datafile file number=00029 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.257.1046368133
+input datafile file number=00008 name=+DG_BPM1PROD/bpm1prod/datafile/users.263.1046453077
+input datafile file number=00011 name=+DG_BPM1PROD/bpm1prod/datafile/users.266.1046453779
+input datafile file number=00017 name=+DG_BPM1PROD/bpm1prod/datafile/users.272.1046539819
+input datafile file number=00030 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.256.1046367795
+input datafile file number=00032 name=+DG_BPM1PROD/bpm1prod/datafile/users.280.1046541669
+input datafile file number=00038 name=+DG_BPM1PROD/bpm1prod/datafile/users.304.1107512627
+input datafile file number=00040 name=+DG_BPM1PROD/bpm1prod/datafile/users.306.1109167133
+input datafile file number=00043 name=+DG_BPM1PROD/bpm1prod/datafile/users.309.1118420561
+input datafile file number=00045 name=+DG_BPM1PROD/bpm1prod/datafile/users.311.1122044157
+input datafile file number=00026 name=+DG_BPM1PROD/bpm1prod/datafile/users.278.1046541397
+input datafile file number=00015 name=+DG_BPM1PROD/bpm1prod/datafile/users.270.1046539525
+input datafile file number=00025 name=+DG_BPM1PROD/bpm1prod/datafile/users.301.1072286805
+input datafile file number=00013 name=+DG_BPM1PROD/bpm1prod/datafile/users.268.1046454225
+input datafile file number=00014 name=+DG_BPM1PROD/bpm1prod/datafile/users.269.1046539401
+input datafile file number=00042 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.308.1117808141
+input datafile file number=00048 name=+DG_BPM1PROD/bpm1prod/datafile/users.314.1168964391
+input datafile file number=00050 name=+DG_BPM1PROD/bpm1prod/datafile/users.316.1168970935
+input datafile file number=00052 name=+DG_BPM1PROD/bpm1prod/datafile/users.318.1168971279
+input datafile file number=00054 name=+DG_BPM1PROD/bpm1prod/datafile/users.320.1176570641
+input datafile file number=00056 name=+DG_BPM1PROD/bpm1prod/datafile/users.322.1180689767
+input datafile file number=00058 name=+DG_BPM1PROD/bpm1prod/datafile/users.324.1180689887
+input datafile file number=00062 name=+DG_BPM1PROD/bpm1prod/datafile/users.328.1188470599
+input datafile file number=00060 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.326.1186048365
+input datafile file number=00001 name=+DG_BPM1PROD/bpm1prod/datafile/system.293.1049759455
+input datafile file number=00035 name=+DG_BPM1PROD/bpm1prod/datafile/undotb2.289.1047464479
+input datafile file number=00002 name=+DG_BPM1PROD/bpm1prod/datafile/sysaux.294.1049759479
+channel ch1: starting piece 1 at 25-JUN-25
+channel ch2: starting compressed incremental level 1 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+input datafile file number=00003 name=+DG_BPM1PROD/bpm1prod/datafile/users.297.1061053341
+input datafile file number=00012 name=+DG_BPM1PROD/bpm1prod/datafile/users.267.1046453957
+input datafile file number=00020 name=+DG_BPM1PROD/bpm1prod/datafile/users.275.1046540245
+input datafile file number=00023 name=+DG_BPM1PROD/bpm1prod/datafile/users.299.1071825603
+input datafile file number=00028 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.258.1046368331
+input datafile file number=00007 name=+DG_BPM1PROD/bpm1prod/datafile/users.262.1046452931
+input datafile file number=00009 name=+DG_BPM1PROD/bpm1prod/datafile/users.264.1046453245
+input datafile file number=00016 name=+DG_BPM1PROD/bpm1prod/datafile/users.271.1046539677
+input datafile file number=00022 name=+DG_BPM1PROD/bpm1prod/datafile/users.277.1046540753
+input datafile file number=00031 name=+DG_BPM1PROD/bpm1prod/datafile/users.279.1046541569
+input datafile file number=00033 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.281.1046600953
+input datafile file number=00039 name=+DG_BPM1PROD/bpm1prod/datafile/users.305.1107512663
+input datafile file number=00041 name=+DG_BPM1PROD/bpm1prod/datafile/users.307.1117356897
+input datafile file number=00044 name=+DG_BPM1PROD/bpm1prod/datafile/users.310.1118420693
+input datafile file number=00046 name=+DG_BPM1PROD/bpm1prod/datafile/users.312.1124013451
+input datafile file number=00010 name=+DG_BPM1PROD/bpm1prod/datafile/users.265.1046453427
+input datafile file number=00004 name=+DG_BPM1PROD/bpm1prod/datafile/users.261.1046370427
+input datafile file number=00019 name=+DG_BPM1PROD/bpm1prod/datafile/users.274.1046540089
+input datafile file number=00027 name=+DG_BPM1PROD/bpm1prod/datafile/users.259.1046368987
+input datafile file number=00047 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.313.1149177847
+input datafile file number=00049 name=+DG_BPM1PROD/bpm1prod/datafile/users.315.1168970709
+input datafile file number=00051 name=+DG_BPM1PROD/bpm1prod/datafile/users.317.1168971161
+input datafile file number=00053 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.319.1176199095
+input datafile file number=00055 name=+DG_BPM1PROD/bpm1prod/datafile/users.321.1178616715
+input datafile file number=00057 name=+DG_BPM1PROD/bpm1prod/datafile/users.323.1180689839
+input datafile file number=00059 name=+DG_BPM1PROD/bpm1prod/datafile/users.325.1185102431
+input datafile file number=00006 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_data.260.1046369509
+input datafile file number=00036 name=+DG_BPM1PROD/bpm1prod/datafile/sysaux.302.1074786821
+input datafile file number=00037 name=+DG_BPM1PROD/bpm1prod/datafile/sysaux.303.1074786929
+input datafile file number=00061 name=+DG_BPM1PROD/bpm1prod/datafile/users.327.1187004499
+input datafile file number=00034 name=+DG_BPM1PROD/bpm1prod/datafile/undotb1.288.1047464031
+channel ch2: starting piece 1 at 25-JUN-25
+channel ch2: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j23ssuun_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:19:45
+channel ch2: starting compressed incremental level 1 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+including current control file in backup set
+channel ch2: starting piece 1 at 25-JUN-25
+channel ch1: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j13ssuum_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:20:13
+channel ch2: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j33st03q_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:00:25
+
+backup will be obsolete on date 02-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed full datafile backup set
+channel ch1: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel ch1: starting piece 1 at 25-JUN-25
+channel ch1: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j43st04l_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+
+current log archived
+backup will be obsolete on date 02-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed archived log backup set
+channel ch1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=165228 RECID=347035 STAMP=1204714443
+input archived log thread=1 sequence=181808 RECID=347036 STAMP=1204715678
+channel ch1: starting piece 1 at 25-JUN-25
+channel ch2: starting compressed archived log backup set
+channel ch2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=165229 RECID=347037 STAMP=1204715678
+channel ch2: starting piece 1 at 25-JUN-25
+channel ch1: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j53st050_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+channel ch2: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j63st050_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:00:07
+
+backup will be obsolete on date 02-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed full datafile backup set
+channel ch1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ch1: starting piece 1 at 25-JUN-25
+channel ch1: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j73st057_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+Finished backup at 25-JUN-25
+
+Starting backup at 25-JUN-25
+current log archived
+backup will be obsolete on date 02-JUL-25
+archived logs required to recover from this backup will be backed up
+skipping archived log of thread 1 with sequence 181808; already backed up
+skipping archived logs of thread 2 from sequence 165228 to 165229; already backed up
+channel ch1: starting compressed archived log backup set
+channel ch1: specifying archived log(s) in backup set
+input archived log thread=2 sequence=165221 RECID=347023 STAMP=1204669055
+input archived log thread=1 sequence=181802 RECID=347022 STAMP=1204668005
+input archived log thread=1 sequence=181803 RECID=347026 STAMP=1204669062
+input archived log thread=2 sequence=165222 RECID=347024 STAMP=1204669056
+input archived log thread=2 sequence=165223 RECID=347025 STAMP=1204669061
+channel ch1: starting piece 1 at 25-JUN-25
+channel ch2: starting compressed archived log backup set
+channel ch2: specifying archived log(s) in backup set
+input archived log thread=2 sequence=165224 RECID=347028 STAMP=1204678812
+input archived log thread=1 sequence=181804 RECID=347027 STAMP=1204678811
+input archived log thread=1 sequence=181805 RECID=347030 STAMP=1204689609
+input archived log thread=2 sequence=165225 RECID=347029 STAMP=1204686045
+input archived log thread=2 sequence=165226 RECID=347031 STAMP=1204696852
+input archived log thread=1 sequence=181806 RECID=347032 STAMP=1204704008
+input archived log thread=2 sequence=165227 RECID=347033 STAMP=1204707658
+input archived log thread=1 sequence=181807 RECID=347034 STAMP=1204714443
+channel ch2: starting piece 1 at 25-JUN-25
+channel ch1: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j83st05p_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+channel ch1: deleting archived log(s)
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_24/thread_2_seq_165221.11089.1204669055 RECID=347023 STAMP=1204669055
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_24/thread_1_seq_181802.12243.1204668005 RECID=347022 STAMP=1204668005
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_24/thread_1_seq_181803.824.1204669061 RECID=347026 STAMP=1204669062
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_24/thread_2_seq_165222.7858.1204669057 RECID=347024 STAMP=1204669056
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_24/thread_2_seq_165223.12825.1204669061 RECID=347025 STAMP=1204669061
+channel ch1: starting compressed archived log backup set
+channel ch1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=181809 RECID=347038 STAMP=1204715699
+input archived log thread=2 sequence=165230 RECID=347039 STAMP=1204715699
+channel ch1: starting piece 1 at 25-JUN-25
+channel ch2: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j93st05p_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch2: backup set complete, elapsed time: 00:00:07
+channel ch2: deleting archived log(s)
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_2_seq_165224.12813.1204678811 RECID=347028 STAMP=1204678812
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_1_seq_181804.12703.1204678811 RECID=347027 STAMP=1204678811
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_1_seq_181805.10790.1204689609 RECID=347030 STAMP=1204689609
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_2_seq_165225.10144.1204686045 RECID=347029 STAMP=1204686045
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_2_seq_165226.12828.1204696853 RECID=347031 STAMP=1204696852
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_1_seq_181806.3621.1204704009 RECID=347032 STAMP=1204704008
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_2_seq_165227.9870.1204707659 RECID=347033 STAMP=1204707658
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_1_seq_181807.11935.1204714441 RECID=347034 STAMP=1204714443
+channel ch2: deleting archived log(s)
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_1_seq_181808.12719.1204715679 RECID=347036 STAMP=1204715678
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_2_seq_165228.4000.1204714443 RECID=347035 STAMP=1204714443
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_2_seq_165229.12097.1204715679 RECID=347037 STAMP=1204715678
+channel ch1: finished piece 1 at 25-JUN-25
+piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_ja3st060_1_1.vab tag=FULL_BPM1PROD_22062025_01H00 comment=API Version 2.0,MMS Version 12.3.0.54
+channel ch1: backup set complete, elapsed time: 00:00:07
+channel ch1: deleting archived log(s)
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_1_seq_181809.10156.1204715699 RECID=347038 STAMP=1204715699
+archived log file name=+DG_FRA/bpm1prod/archivelog/2025_06_25/thread_2_seq_165230.8481.1204715699 RECID=347039 STAMP=1204715699
+Finished backup at 25-JUN-25
+
+released channel: ch1
+
+released channel: ch2
+
+RMAN retention policy will be applied to the command
+RMAN retention policy is set to redundancy 1
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=537 instance=bpm1prod1 device type=DISK
+allocated channel: ORA_DISK_2
+channel ORA_DISK_2: SID=885 instance=bpm1prod1 device type=DISK
+allocated channel: ORA_SBT_TAPE_1
+channel ORA_SBT_TAPE_1: SID=138 instance=bpm1prod1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_1: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_2
+channel ORA_SBT_TAPE_2: SID=189 instance=bpm1prod1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_2: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_3
+channel ORA_SBT_TAPE_3: SID=262 instance=bpm1prod1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_3: Veeam Plug-in for Oracle RMAN
+allocated channel: ORA_SBT_TAPE_4
+channel ORA_SBT_TAPE_4: SID=640 instance=bpm1prod1 device type=SBT_TAPE
+channel ORA_SBT_TAPE_4: Veeam Plug-in for Oracle RMAN
+Deleting the following obsolete backups and copies:
+Type                 Key    Completion Time    Filename/Handle
+-------------------- ------ ------------------ --------------------
+Backup Set           18005  18-JUN-25         
+  Backup Piece       31447  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dj3s9dhd_1_1.vab
+Backup Set           18006  18-JUN-25         
+  Backup Piece       31448  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dk3s9dhe_1_1.vab
+Backup Set           18007  18-JUN-25         
+  Backup Piece       31449  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dl3s9f15_1_1.vab
+Backup Set           18008  18-JUN-25         
+  Backup Piece       31450  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dm3s9f20_1_1.vab
+Backup Set           18009  18-JUN-25         
+  Backup Piece       31451  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dn3s9f2b_1_1.vab
+Backup Set           18010  18-JUN-25         
+  Backup Piece       31452  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_do3s9f2b_1_1.vab
+Backup Set           18011  18-JUN-25         
+  Backup Piece       31453  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dp3s9f2i_1_1.vab
+Backup Set           18013  18-JUN-25         
+  Backup Piece       31455  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dq3s9f34_1_1.vab
+Backup Set           18012  18-JUN-25         
+  Backup Piece       31454  18-JUN-25          3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dr3s9f34_1_1.vab
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dj3s9dhd_1_1.vab RECID=31447 STAMP=1204074031
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dk3s9dhe_1_1.vab RECID=31448 STAMP=1204074033
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dl3s9f15_1_1.vab RECID=31449 STAMP=1204075558
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dm3s9f20_1_1.vab RECID=31450 STAMP=1204075584
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dn3s9f2b_1_1.vab RECID=31451 STAMP=1204075595
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_do3s9f2b_1_1.vab RECID=31452 STAMP=1204075595
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dp3s9f2i_1_1.vab RECID=31453 STAMP=1204075603
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dq3s9f34_1_1.vab RECID=31455 STAMP=1204075620
+deleted backup piece
+backup piece handle=3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250618_dr3s9f34_1_1.vab RECID=31454 STAMP=1204075620
+Deleted 9 objects
+
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18101   Full    8.00M      SBT_TAPE    00:00:08     22-JUN-25      
+        BP Key: 31596   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_1562024455_BPM1PROD_20250622_i83skbpk_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 22-JUL-25      
+  SPFILE Included: Modification time: 22-JUN-25
+  SPFILE db_unique_name: BPM1PROD
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18113   Full    8.00M      SBT_TAPE    00:00:06     24-JUN-25      
+        BP Key: 31608   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250624_io3sr85f_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 01-JUL-25      
+  SPFILE Included: Modification time: 22-JUN-25
+  SPFILE db_unique_name: BPM1PROD
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18123   Full    8.00M      SBT_TAPE    00:00:05     25-JUN-25      
+        BP Key: 31618   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j43st04l_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 02-JUL-25      
+  SPFILE Included: Modification time: 22-JUN-25
+  SPFILE db_unique_name: BPM1PROD
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18097   Incr 0  16.00M     SBT_TAPE    00:00:21     22-JUN-25      
+        BP Key: 31592   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_1562024455_BPM1PROD_20250622_i73skbbl_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 22-JUL-25      
+  Control File Included: Ckp SCN: 47075614932   Ckp time: 22-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18105   Full    16.00M     SBT_TAPE    00:00:08     22-JUN-25      
+        BP Key: 31600   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_1562024455_BPM1PROD_20250622_ic3skbqo_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 22-JUL-25      
+  Control File Included: Ckp SCN: 47075615444   Ckp time: 22-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18111   Incr 1  16.00M     SBT_TAPE    00:00:09     24-JUN-25      
+        BP Key: 31606   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250624_in3sr84k_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 01-JUL-25      
+  Control File Included: Ckp SCN: 47076931677   Ckp time: 24-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18116   Full    16.00M     SBT_TAPE    00:00:12     24-JUN-25      
+        BP Key: 31611   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250624_ir3sr869_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 01-JUL-25      
+  Control File Included: Ckp SCN: 47076931782   Ckp time: 24-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18121   Incr 1  16.00M     SBT_TAPE    00:00:18     25-JUN-25      
+        BP Key: 31616   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j33st03q_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 02-JUL-25      
+  Control File Included: Ckp SCN: 47077369137   Ckp time: 25-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18126   Full    16.00M     SBT_TAPE    00:00:06     25-JUN-25      
+        BP Key: 31621   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250625_j73st057_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 02-JUL-25      
+  Control File Included: Ckp SCN: 47077369206   Ckp time: 25-JUN-25
+
+RMAN> 
+
+Recovery Manager complete.

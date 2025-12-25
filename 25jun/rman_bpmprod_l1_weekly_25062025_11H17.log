@@ -1,0 +1,268 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Wed Jun 25 11:17:09 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: BPMPROD (DBID=1062634547)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 10> 11> 12> 13> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=1437 instance=bpmprod1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch2
+channel ch2: SID=307 instance=bpmprod1 device type=SBT_TAPE
+channel ch2: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch3
+channel ch3: SID=866 instance=bpmprod1 device type=SBT_TAPE
+channel ch3: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch4
+channel ch4: SID=1173 instance=bpmprod1 device type=SBT_TAPE
+channel ch4: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 25-JUN-25
+current log archived
+
+backup will be obsolete on date 02-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00003 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.282.1049770611
+input datafile file number=00032 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.278.1049770511
+input datafile file number=00043 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.289.1049770719
+input datafile file number=00060 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.331.1062347901
+input datafile file number=00071 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.342.1076433771
+input datafile file number=00077 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.348.1077816593
+input datafile file number=00084 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.355.1080818017
+input datafile file number=00008 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.266.1049770169
+input datafile file number=00025 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.272.1049770345
+input datafile file number=00090 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.361.1102163103
+input datafile file number=00096 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.367.1104403307
+input datafile file number=00102 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.373.1106154679
+input datafile file number=00108 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.379.1111922515
+input datafile file number=00114 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.385.1113998247
+input datafile file number=00121 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.392.1118066009
+input datafile file number=00127 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.398.1119526149
+input datafile file number=00135 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.406.1123427521
+input datafile file number=00143 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.414.1131473315
+input datafile file number=00149 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.420.1132576255
+input datafile file number=00179 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.450.1144503405
+input datafile file number=00033 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.281.1049770567
+input datafile file number=00005 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.283.1049770613
+input datafile file number=00024 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.277.1049770455
+input datafile file number=00158 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.429.1138724211
+input datafile file number=00164 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.435.1139412757
+input datafile file number=00173 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.444.1144315011
+input datafile file number=00182 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.453.1145178987
+input datafile file number=00188 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.459.1146243651
+input datafile file number=00195 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.466.1149178029
+input datafile file number=00205 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.476.1152979823
+input datafile file number=00211 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.482.1153990705
+input datafile file number=00217 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.488.1154702627
+input datafile file number=00223 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.494.1155920139
+input datafile file number=00230 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.501.1157380621
+input datafile file number=00236 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.507.1158658089
+input datafile file number=00242 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.513.1159870583
+input datafile file number=00249 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.520.1162977673
+input datafile file number=00255 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.526.1163498001
+input datafile file number=00263 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.534.1164532637
+input datafile file number=00269 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.540.1166443257
+input datafile file number=00275 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.546.1168965725
+input datafile file number=00281 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.552.1169630773
+input datafile file number=00287 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.558.1169661921
+input datafile file number=00293 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.564.1170696047
+input datafile file number=00299 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.570.1171623659
+input datafile file number=00305 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.576.1173952539
+input datafile file number=00311 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.582.1176801245
+input datafile file number=00328 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.599.1183888491
+input datafile file number=00336 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.607.1196005039
+input datafile file number=00342 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.613.1201706517
+input datafile file number=00318 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.589.1178794427
+input datafile file number=00131 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.402.1121446825
+input datafile file number=00229 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.500.1157216479
+input datafile file number=00323 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.594.1180004555
+input datafile file number=00002 name=+DG_BPMPROD/bpmprod/datafile/sysaux.307.1049771805
+input datafile file number=00021 name=+DG_BPMPROD/bpmprod/datafile/sysaux.308.1049771805
+input datafile file number=00007 name=+DG_BPMPROD/bpmprod/datafile/dev_mds.261.1049769735
+input datafile file number=00004 name=+DG_BPMPROD/bpmprod/datafile/users.256.1049769513
+input datafile file number=00006 name=+DG_BPMPROD/bpmprod/datafile/dev_ias_orasdpm.258.1049769645
+input datafile file number=00019 name=+DG_BPMPROD/bpmprod/datafile/dev_ias_orasdpm.259.1049769645
+input datafile file number=00038 name=+DG_BPMPROD/bpmprod/datafile/users.257.1049769513
+input datafile file number=00325 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.596.1180004601
+channel ch1: starting piece 1 at 25-JUN-25
+channel ch2: starting compressed incremental level 1 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+input datafile file number=00029 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.265.1049770113
+input datafile file number=00041 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.287.1049770683
+input datafile file number=00057 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.328.1062151141
+input datafile file number=00069 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.340.1075197919
+input datafile file number=00075 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.346.1077816571
+input datafile file number=00081 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.352.1079275455
+input datafile file number=00088 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.359.1083342183
+input datafile file number=00015 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.270.1049770279
+input datafile file number=00048 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.275.1049770401
+input datafile file number=00094 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.365.1103987593
+input datafile file number=00100 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.371.1106069051
+input datafile file number=00106 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.377.1110360673
+input datafile file number=00112 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.383.1112429471
+input datafile file number=00118 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.389.1114680133
+input datafile file number=00125 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.396.1119517527
+input datafile file number=00133 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.404.1121525975
+input datafile file number=00139 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.410.1125653213
+input datafile file number=00147 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.418.1132277337
+input datafile file number=00171 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.442.1144311631
+input datafile file number=00321 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.592.1179917243
+input datafile file number=00052 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.274.1049770401
+input datafile file number=00053 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.276.1049770455
+input datafile file number=00152 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.423.1136051015
+input datafile file number=00155 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.426.1138096773
+input datafile file number=00161 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.432.1139412139
+input datafile file number=00168 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.439.1143022439
+input datafile file number=00176 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.447.1144315545
+input datafile file number=00185 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.456.1146043435
+input datafile file number=00191 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.462.1147598247
+input datafile file number=00198 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.469.1149263787
+input datafile file number=00208 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.479.1153051959
+input datafile file number=00214 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.485.1154078419
+input datafile file number=00220 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.491.1155311655
+input datafile file number=00226 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.497.1156614903
+input datafile file number=00233 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.504.1158054439
+input datafile file number=00239 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.510.1159004285
+input datafile file number=00245 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.516.1161359517
+input datafile file number=00252 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.523.1163439923
+input datafile file number=00259 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.530.1164298381
+input datafile file number=00266 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.537.1166442097
+input datafile file number=00272 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.543.1168249561
+input datafile file number=00278 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.549.1168966291
+input datafile file number=00284 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.555.1169655485
+input datafile file number=00290 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.561.1170692587
+input datafile file number=00296 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.567.1171623377
+input datafile file number=00302 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.573.1173184931
+input datafile file number=00308 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.579.1175599265
+input datafile file number=00316 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.587.1177667375
+input datafile file number=00333 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.604.1188469983
+input datafile file number=00339 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.610.1197548381
+input datafile file number=00036 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.280.1049770567
+input datafile file number=00322 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.593.1180003917
+input datafile file number=00199 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.470.1151927449
+input datafile file number=00065 name=+DG_BPMPROD/bpmprod/datafile/sysaux.336.1074071607
+input datafile file number=00324 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.595.1180004575
+channel ch2: starting piece 1 at 25-JUN-25
+channel ch3: starting compressed incremental level 1 datafile backup set
+channel ch3: specifying datafile(s) in backup set
+input datafile file number=00031 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.284.1049770647
+input datafile file number=00042 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.288.1049770717
+input datafile file number=00058 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.329.1062151219
+input datafile file number=00070 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.341.1075198033
+input datafile file number=00076 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.347.1077816573
+input datafile file number=00082 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.353.1079275455
+input datafile file number=00089 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.360.1083342201
+input datafile file number=00023 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.271.1049770279
+input datafile file number=00056 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.322.1054390155
+input datafile file number=00095 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.366.1104394989
+input datafile file number=00101 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.372.1106134475
+input datafile file number=00107 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.378.1110639105
+input datafile file number=00113 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.384.1113998169
+input datafile file number=00119 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.390.1118064259
+input datafile file number=00126 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.397.1119517677
+input datafile file number=00134 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.405.1122825053
+input datafile file number=00142 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.413.1128959437
+input datafile file number=00148 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.419.1132277363
+input datafile file number=00172 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.443.1144311681
+input datafile file number=00140 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.411.1126875341
+input datafile file number=00141 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.412.1126875397
+input datafile file number=00064 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.335.1071825573
+input datafile file number=00153 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.424.1136051079
+input datafile file number=00156 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.427.1138096837
+input datafile file number=00162 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.433.1139412345
+input datafile file number=00169 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.440.1143039403
+input datafile file number=00177 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.448.1144315765
+input datafile file number=00186 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.457.1146240733
+input datafile file number=00193 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.464.1148204835
+input datafile file number=00203 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.474.1152874737
+input datafile file number=00209 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.480.1153990569
+input datafile file number=00215 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.486.1154699029
+input datafile file number=00221 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.492.1155311723
+input datafile file number=00227 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.498.1156614975
+input datafile file number=00234 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.505.1158054501
+input datafile file number=00240 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.511.1159607577
+input datafile file number=00246 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.517.1161361631
+input datafile file number=00253 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.524.1163439999
+input datafile file number=00260 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.531.1164298425
+input datafile file number=00267 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.538.1166443127
+input datafile file number=00273 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.544.1168963197
+input datafile file number=00279 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.550.1168966607
+input datafile file number=00285 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.556.1169655539
+input datafile file number=00291 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.562.1170695901
+input datafile file number=00297 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.568.1171623421
+input datafile file number=00303 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.574.1173184999
+input datafile file number=00309 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.580.1175599327
+input datafile file number=00320 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.591.1179480937
+input datafile file number=00334 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.605.1188470093
+input datafile file number=00340 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.611.1197548435
+input datafile file number=00120 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.391.1118064389
+input datafile file number=00327 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.598.1182593139
+input datafile file number=00181 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.452.1144936523
+input datafile file number=00200 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.471.1151927517
+channel ch3: starting piece 1 at 25-JUN-25
+channel ch4: starting compressed incremental level 1 datafile backup set
+channel ch4: specifying datafile(s) in backup set
+input datafile file number=00028 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.264.1049770113
+input datafile file number=00040 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.296.1049770871
+input datafile file number=00051 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.295.1049770825
+input datafile file number=00068 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.339.1075197919
+input datafile file number=00074 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.345.1077816571
+input datafile file number=00080 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.351.1079275453
+input datafile file number=00087 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.358.1081338327
+input datafile file number=00014 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.269.1049770225
+input datafile file number=00046 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.321.1054390099
+input datafile file number=00093 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.364.1103987379
+input datafile file number=00099 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.370.1106069019
+input datafile file number=00105 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.376.1106388275
+input datafile file number=00111 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.382.1112429409
+input datafile file number=00117 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.388.1114680073
+input datafile file number=00124 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.395.1118652693
+input datafile file number=00132 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.403.1121446867
+input datafile file number=00138 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.409.1125653157
+input datafile file number=00146 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.417.1132078675
+input datafile file number=00166 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.437.1143015841
+input datafile file number=00317 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.588.1178405953
+input datafile file number=00067 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.338.1075192965
+input datafile file number=00063 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.334.1071825573
+input datafile file number=00083 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.354.1080225989
+input datafile file number=00159 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.430.1138724255
+input datafile file number=00165 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.436.1142165763
+input datafile file number=00174 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.445.1144315155
+input datafile file number=00183 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.454.1145785139
+input datafile file number=00189 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.460.1146993577
+input datafile file number=00196 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.467.1149178091
+input datafile file number=00206 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.477.1152980345
+input datafile file number=00212 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.483.1153990759
+input datafile file number=00218 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.489.1154776959
+input datafile file number=00224 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.495.1155920469
+input datafile file number=00231 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.502.1157380765
+input datafile file number=00237 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.508.1158658129
+input datafile file number=00243 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.514.1161341509
+input datafile file number=00250 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.521.1163324303
+input datafile file number=00257 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.528.1164297829
+input datafile file number=00264 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.535.1164532677
+input datafile file number=00270 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.541.1166443455
+input datafile file number=00276 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.547.1168965799
+input datafile file number=00282 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.553.1169655317
+input datafile file number=00288 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.559.1170678277
+input datafile file number=00294 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.565.1171532067
+input datafile file number=00300 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.571.1172393549
+input datafile file number=00306 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.577.1173952635
+input datafile file number=00314 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.585.1177667239
+input datafile file number=00329 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.600.1184490697
+input datafile file number=00337 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.608.1196005165
+input datafile file number=00201 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.472.1152838783
+input datafile file number=00256 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.527.1164274301
+input datafile file number=00331 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.602.1185121219
+input datafile file number=00312 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.583.1177002033
+input datafile file number=00313 name=+DG_BPMPROD/bpmprod/datafile/dev_soainfra.584.1177002425
+channel ch4: starting piece 1 at 25-JUN-25

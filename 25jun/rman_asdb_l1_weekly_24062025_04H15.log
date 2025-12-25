@@ -1,0 +1,118 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Tue Jun 24 04:16:21 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: ASDB (DBID=2264190148)
+
+RMAN> 2> 3> 4> 5> 6> 7> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=203 instance=asdb1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 24-JUN-25
+current log archived
+
+backup will be obsolete on date 01-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00002 name=+DG_ASDB/asdb/datafile/sysaux.305.1074797013
+input datafile file number=00005 name=+DG_ASDB/asdb/datafile/sysaux.306.1074797079
+input datafile file number=00001 name=+DG_ASDB/asdb/datafile/system.293.1049777703
+input datafile file number=00042 name=+DG_ASDB/asdb/datafile/undotb1.295.1049778199
+input datafile file number=00043 name=+DG_ASDB/asdb/datafile/undotb2.296.1049778259
+input datafile file number=00003 name=+DG_ASDB/asdb/datafile/sysaux.294.1049777731
+input datafile file number=00010 name=+DG_ASDB/asdb/datafile/ias_meta.261.1049775497
+input datafile file number=00041 name=+DG_ASDB/asdb/datafile/ias_meta.262.1049775497
+input datafile file number=00040 name=+DG_ASDB/asdb/datafile/olts_attrstore.286.1049777101
+input datafile file number=00039 name=+DG_ASDB/asdb/datafile/olts_attrstore.287.1049777101
+input datafile file number=00013 name=+DG_ASDB/asdb/datafile/dcm.267.1049775851
+input datafile file number=00026 name=+DG_ASDB/asdb/datafile/olts_ct_store.290.1049777271
+input datafile file number=00006 name=+DG_ASDB/asdb/datafile/portal.257.1049774987
+input datafile file number=00027 name=+DG_ASDB/asdb/datafile/olts_default.291.1049777347
+input datafile file number=00017 name=+DG_ASDB/asdb/datafile/b2b_dt.274.1049776315
+input datafile file number=00016 name=+DG_ASDB/asdb/datafile/b2b_rt.271.1049776185
+input datafile file number=00024 name=+DG_ASDB/asdb/datafile/olts_attrstore.288.1049777105
+input datafile file number=00023 name=+DG_ASDB/asdb/datafile/uddisys_ts.285.1049777013
+input datafile file number=00008 name=+DG_ASDB/asdb/datafile/portal_idx.259.1049775207
+input datafile file number=00018 name=+DG_ASDB/asdb/datafile/b2b_idx.276.1049776561
+input datafile file number=00020 name=+DG_ASDB/asdb/datafile/orabpel.280.1049776751
+input datafile file number=00019 name=+DG_ASDB/asdb/datafile/b2b_lob.278.1049776661
+input datafile file number=00021 name=+DG_ASDB/asdb/datafile/bam.281.1049776843
+input datafile file number=00014 name=+DG_ASDB/asdb/datafile/dsgateway_tab.269.1049775961
+input datafile file number=00029 name=+DG_ASDB/asdb/datafile/bam.282.1049776843
+input datafile file number=00030 name=+DG_ASDB/asdb/datafile/b2b_dt.275.1049776315
+input datafile file number=00031 name=+DG_ASDB/asdb/datafile/b2b_idx.277.1049776561
+input datafile file number=00032 name=+DG_ASDB/asdb/datafile/b2b_lob.279.1049776661
+input datafile file number=00033 name=+DG_ASDB/asdb/datafile/b2b_rt.272.1049776185
+input datafile file number=00034 name=+DG_ASDB/asdb/datafile/b2b_rt.273.1049776187
+input datafile file number=00035 name=+DG_ASDB/asdb/datafile/dcm.268.1049775851
+input datafile file number=00036 name=+DG_ASDB/asdb/datafile/disco_ptm5_cache.265.1049775739
+input datafile file number=00037 name=+DG_ASDB/asdb/datafile/disco_ptm5_meta.263.1049775633
+input datafile file number=00038 name=+DG_ASDB/asdb/datafile/ocats.283.1049776925
+input datafile file number=00028 name=+DG_ASDB/asdb/datafile/olts_svrmgstore.292.1049777435
+input datafile file number=00004 name=+DG_ASDB/asdb/datafile/users.256.1049774823
+input datafile file number=00011 name=+DG_ASDB/asdb/datafile/disco_ptm5_meta.264.1049775633
+input datafile file number=00012 name=+DG_ASDB/asdb/datafile/disco_ptm5_cache.266.1049775739
+input datafile file number=00015 name=+DG_ASDB/asdb/datafile/wcrsys_ts.270.1049776075
+input datafile file number=00022 name=+DG_ASDB/asdb/datafile/ocats.284.1049776925
+input datafile file number=00007 name=+DG_ASDB/asdb/datafile/portal_doc.258.1049775095
+input datafile file number=00009 name=+DG_ASDB/asdb/datafile/portal_log.260.1049775315
+input datafile file number=00025 name=+DG_ASDB/asdb/datafile/olts_battrstore.289.1049777195
+channel ch1: starting piece 1 at 24-JUN-25
+released channel: ch1
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of backup command at 06/24/2025 04:22:54
+ORA-19506: failed to create sequential file, name="3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_2264190148_ASDB_20250624_n83spj9q_1_1.vab", parms=""
+ORA-27028: skgfqcre: sbtbackup returned error
+ORA-19511: Error received from media manager layer, error text:
+   TCP stream was closed
+--tr:Failed to start source agent.
+--tr:Failed to start shared source agent.
+--tr:Failed to get agents session.
+--tr:Failed to create RMAN backup file session.
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27175   Full    8.00M      SBT_TAPE    00:00:08     21-JUN-25      
+        BP Key: 45604   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_21062025_23H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_2264190148_ASDB_20250621_n13sjp41_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 21-JUL-25      
+  SPFILE Included: Modification time: 21-JUN-25
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27174   Incr 0  16.00M     SBT_TAPE    00:00:10     21-JUN-25      
+        BP Key: 45603   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_21062025_23H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_2264190148_ASDB_20250621_n03sjp3h_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 21-JUL-25      
+  Control File Included: Ckp SCN: 2500839670   Ckp time: 21-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+27177   Full    16.00M     SBT_TAPE    00:00:08     21-JUN-25      
+        BP Key: 45606   Status: AVAILABLE  Compressed: YES  Tag: FULL_ASDB_21062025_23H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_2264190148_ASDB_20250621_n33sjp55_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 21-JUL-25      
+  Control File Included: Ckp SCN: 2500839765   Ckp time: 21-JUN-25
+
+RMAN> 
+
+Recovery Manager complete.

@@ -1,0 +1,151 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Wed Jul 2 23:00:02 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: RMANCAT (DBID=3914110385)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=229 instance=rmancat1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch2
+channel ch2: SID=13 instance=rmancat1 device type=SBT_TAPE
+channel ch2: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 02-JUL-25
+current log archived
+
+backup will be obsolete on date 09-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00006 name=+DG_META4/rmancat/datafile/rman_data.276.1054228373
+input datafile file number=00002 name=+DG_META4/rmancat/datafile/sysaux.286.1054229821
+input datafile file number=00007 name=+DG_META4/rmancat/datafile/oranev01_odbprac_12c.277.1054228383
+channel ch1: starting piece 1 at 02-JUL-25
+channel ch2: starting compressed incremental level 1 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+input datafile file number=00001 name=+DG_META4/rmancat/datafile/system.285.1054229791
+input datafile file number=00008 name=+DG_META4/rmancat/datafile/undotb2.282.1054229075
+input datafile file number=00009 name=+DG_META4/rmancat/datafile/undotb1.283.1054229095
+input datafile file number=00004 name=+DG_META4/rmancat/datafile/users.275.1054228369
+channel ch2: starting piece 1 at 02-JUL-25
+RMAN-03009: failure of backup command on ch1 channel at 07/02/2025 23:08:13
+ORA-19506: failed to create sequential file, name="3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_gc3tjcg2_1_1.vab", parms=""
+ORA-27028: skgfqcre: sbtbackup returned error
+ORA-19511: Error received from media manager layer, error text:
+   TCP stream was closed
+--tr:Failed to start source agent.
+--tr:Failed to start shared source agent.
+--tr:Failed to get agents session.
+--tr:Failed to create RMAN backup file session.
+channel ch1 disabled, job failed on it will be run on another channel
+released channel: ch1
+released channel: ch2
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of backup command at 07/02/2025 23:12:08
+ORA-19506: failed to create sequential file, name="3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_gd3tjcg2_1_1.vab", parms=""
+ORA-27028: skgfqcre: sbtbackup returned error
+ORA-19511: Error received from media manager layer, error text:
+   TCP stream was closed
+--tr:Failed to start source agent.
+--tr:Failed to start shared source agent.
+--tr:Failed to get agents session.
+--tr:Failed to create RMAN backup file session.
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14670   Full    8.00M      SBT_TAPE    00:00:10     29-JUN-25      
+        BP Key: 14670   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_3914110385_RMANCAT_20250629_ff3t865q_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-SEP-25      
+  SPFILE Included: Modification time: 09-JUN-25
+  SPFILE db_unique_name: RMANCAT
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14680   Full    8.00M      SBT_TAPE    00:00:10     30-JUN-25      
+        BP Key: 14680   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250630_fp3tbffd_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  SPFILE Included: Modification time: 09-JUN-25
+  SPFILE db_unique_name: RMANCAT
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14690   Full    8.00M      SBT_TAPE    00:00:05     02-JUL-25      
+        BP Key: 14690   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g53tiogm_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 09-JUL-25      
+  SPFILE Included: Modification time: 02-JUL-25
+  SPFILE db_unique_name: RMANCAT
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14669   Incr 0  16.00M     SBT_TAPE    00:00:11     29-JUN-25      
+        BP Key: 14669   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_3914110385_RMANCAT_20250629_fe3t865a_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-SEP-25      
+  Control File Included: Ckp SCN: 780715888    Ckp time: 29-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14673   Full    16.00M     SBT_TAPE    00:00:16     29-JUN-25      
+        BP Key: 14673   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09/RMAN_full_3914110385_RMANCAT_20250629_fi3t866u_1_1.vab   Media: {49ddb6dc-1b25-4d5a-b1e4-2d77ff027b09}
+        Keep: BACKUP_LOGS        Until: 27-SEP-25      
+  Control File Included: Ckp SCN: 780716127    Ckp time: 29-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14679   Incr 1  16.00M     SBT_TAPE    00:00:14     30-JUN-25      
+        BP Key: 14679   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250630_fo3tbfet_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  Control File Included: Ckp SCN: 780954514    Ckp time: 30-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14683   Full    16.00M     SBT_TAPE    00:00:30     30-JUN-25      
+        BP Key: 14683   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250630_fs3tbfgr_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 07-JUL-25      
+  Control File Included: Ckp SCN: 780954602    Ckp time: 30-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14689   Incr 1  16.00M     SBT_TAPE    00:00:17     02-JUL-25      
+        BP Key: 14689   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g43tiofs_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 09-JUL-25      
+  Control File Included: Ckp SCN: 781239410    Ckp time: 02-JUL-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+14693   Full    16.00M     SBT_TAPE    00:00:06     02-JUL-25      
+        BP Key: 14693   Status: AVAILABLE  Compressed: YES  Tag: FULL_RMANCAT_29062025_16H57
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_3914110385_RMANCAT_20250702_g83tioh9_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 09-JUL-25      
+  Control File Included: Ckp SCN: 781239467    Ckp time: 02-JUL-25
+
+RMAN> 
+
+Recovery Manager complete.

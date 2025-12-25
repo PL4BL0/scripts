@@ -1,0 +1,70 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Sat Jul 5 23:00:01 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: RMANCAT (DBID=3914110385)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=97 instance=rmancat1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch2
+channel ch2: SID=170 instance=rmancat1 device type=SBT_TAPE
+channel ch2: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 05-JUL-25
+current log archived
+
+backup will be obsolete on date 04-AUG-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 0 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00006 name=+DG_META4/rmancat/datafile/rman_data.276.1054228373
+input datafile file number=00002 name=+DG_META4/rmancat/datafile/sysaux.286.1054229821
+input datafile file number=00007 name=+DG_META4/rmancat/datafile/oranev01_odbprac_12c.277.1054228383
+channel ch1: starting piece 1 at 05-JUL-25
+channel ch2: starting compressed incremental level 0 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+input datafile file number=00001 name=+DG_META4/rmancat/datafile/system.285.1054229791
+input datafile file number=00008 name=+DG_META4/rmancat/datafile/undotb2.282.1054229075
+input datafile file number=00009 name=+DG_META4/rmancat/datafile/undotb1.283.1054229095
+input datafile file number=00004 name=+DG_META4/rmancat/datafile/users.275.1054228369
+channel ch2: starting piece 1 at 05-JUL-25
+RMAN-03009: failure of backup command on ch2 channel at 07/05/2025 23:04:23
+ORA-19506: failed to create sequential file, name="3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_3914110385_RMANCAT_20250705_h73tr9k2_1_1.vab", parms=""
+ORA-27028: skgfqcre: sbtbackup returned error
+ORA-19511: Error received from media manager layer, error text:
+   TCP stream was closed
+--tr:Failed to start source agent.
+--tr:Failed to start shared source agent.
+--tr:Failed to get agents session.
+--tr:Failed to create RMAN backup file session.
+channel ch2 disabled, job failed on it will be run on another channel
+released channel: ch1
+released channel: ch2
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of backup command at 07/05/2025 23:07:48
+ORA-19506: failed to create sequential file, name="3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_3914110385_RMANCAT_20250705_h63tr9k2_1_1.vab", parms=""
+ORA-27028: skgfqcre: sbtbackup returned error
+ORA-19511: Error received from media manager layer, error text:
+   TCP stream was closed
+--tr:Failed to start source agent.
+--tr:Failed to start shared source agent.
+--tr:Failed to get agents session.
+--tr:Failed to create RMAN backup file session.
+
+RMAN> 
+specification does not match any backup in the repository
+
+RMAN> 
+specification does not match any backup in the repository
+
+RMAN> 
+
+Recovery Manager complete.

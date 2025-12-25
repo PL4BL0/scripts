@@ -1,0 +1,156 @@
+
+Recovery Manager: Release 11.2.0.4.0 - Production on Tue Jun 24 01:26:52 2025
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+RMAN> 
+connected to target database: BPM1PROD (DBID=1562024455)
+
+RMAN> 2> 3> 4> 5> 6> 7> 8> 9> 
+using target database control file instead of recovery catalog
+allocated channel: ch1
+channel ch1: SID=138 instance=bpm1prod1 device type=SBT_TAPE
+channel ch1: Veeam Plug-in for Oracle RMAN
+
+allocated channel: ch2
+channel ch2: SID=634 instance=bpm1prod1 device type=SBT_TAPE
+channel ch2: Veeam Plug-in for Oracle RMAN
+
+Starting backup at 24-JUN-25
+current log archived
+
+backup will be obsolete on date 01-JUL-25
+archived logs required to recover from this backup will be backed up
+channel ch1: starting compressed incremental level 1 datafile backup set
+channel ch1: specifying datafile(s) in backup set
+input datafile file number=00005 name=+DG_BPM1PROD/bpm1prod/datafile/users.298.1067258611
+input datafile file number=00018 name=+DG_BPM1PROD/bpm1prod/datafile/users.273.1046539957
+input datafile file number=00021 name=+DG_BPM1PROD/bpm1prod/datafile/users.276.1046540617
+input datafile file number=00024 name=+DG_BPM1PROD/bpm1prod/datafile/users.300.1071825603
+input datafile file number=00029 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.257.1046368133
+input datafile file number=00008 name=+DG_BPM1PROD/bpm1prod/datafile/users.263.1046453077
+input datafile file number=00011 name=+DG_BPM1PROD/bpm1prod/datafile/users.266.1046453779
+input datafile file number=00017 name=+DG_BPM1PROD/bpm1prod/datafile/users.272.1046539819
+input datafile file number=00030 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.256.1046367795
+input datafile file number=00032 name=+DG_BPM1PROD/bpm1prod/datafile/users.280.1046541669
+input datafile file number=00038 name=+DG_BPM1PROD/bpm1prod/datafile/users.304.1107512627
+input datafile file number=00040 name=+DG_BPM1PROD/bpm1prod/datafile/users.306.1109167133
+input datafile file number=00043 name=+DG_BPM1PROD/bpm1prod/datafile/users.309.1118420561
+input datafile file number=00045 name=+DG_BPM1PROD/bpm1prod/datafile/users.311.1122044157
+input datafile file number=00026 name=+DG_BPM1PROD/bpm1prod/datafile/users.278.1046541397
+input datafile file number=00015 name=+DG_BPM1PROD/bpm1prod/datafile/users.270.1046539525
+input datafile file number=00025 name=+DG_BPM1PROD/bpm1prod/datafile/users.301.1072286805
+input datafile file number=00013 name=+DG_BPM1PROD/bpm1prod/datafile/users.268.1046454225
+input datafile file number=00014 name=+DG_BPM1PROD/bpm1prod/datafile/users.269.1046539401
+input datafile file number=00042 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.308.1117808141
+input datafile file number=00048 name=+DG_BPM1PROD/bpm1prod/datafile/users.314.1168964391
+input datafile file number=00050 name=+DG_BPM1PROD/bpm1prod/datafile/users.316.1168970935
+input datafile file number=00052 name=+DG_BPM1PROD/bpm1prod/datafile/users.318.1168971279
+input datafile file number=00054 name=+DG_BPM1PROD/bpm1prod/datafile/users.320.1176570641
+input datafile file number=00056 name=+DG_BPM1PROD/bpm1prod/datafile/users.322.1180689767
+input datafile file number=00058 name=+DG_BPM1PROD/bpm1prod/datafile/users.324.1180689887
+input datafile file number=00062 name=+DG_BPM1PROD/bpm1prod/datafile/users.328.1188470599
+input datafile file number=00060 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.326.1186048365
+input datafile file number=00001 name=+DG_BPM1PROD/bpm1prod/datafile/system.293.1049759455
+input datafile file number=00035 name=+DG_BPM1PROD/bpm1prod/datafile/undotb2.289.1047464479
+input datafile file number=00002 name=+DG_BPM1PROD/bpm1prod/datafile/sysaux.294.1049759479
+channel ch1: starting piece 1 at 24-JUN-25
+channel ch2: starting compressed incremental level 1 datafile backup set
+channel ch2: specifying datafile(s) in backup set
+input datafile file number=00003 name=+DG_BPM1PROD/bpm1prod/datafile/users.297.1061053341
+input datafile file number=00012 name=+DG_BPM1PROD/bpm1prod/datafile/users.267.1046453957
+input datafile file number=00020 name=+DG_BPM1PROD/bpm1prod/datafile/users.275.1046540245
+input datafile file number=00023 name=+DG_BPM1PROD/bpm1prod/datafile/users.299.1071825603
+input datafile file number=00028 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.258.1046368331
+input datafile file number=00007 name=+DG_BPM1PROD/bpm1prod/datafile/users.262.1046452931
+input datafile file number=00009 name=+DG_BPM1PROD/bpm1prod/datafile/users.264.1046453245
+input datafile file number=00016 name=+DG_BPM1PROD/bpm1prod/datafile/users.271.1046539677
+input datafile file number=00022 name=+DG_BPM1PROD/bpm1prod/datafile/users.277.1046540753
+input datafile file number=00031 name=+DG_BPM1PROD/bpm1prod/datafile/users.279.1046541569
+input datafile file number=00033 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.281.1046600953
+input datafile file number=00039 name=+DG_BPM1PROD/bpm1prod/datafile/users.305.1107512663
+input datafile file number=00041 name=+DG_BPM1PROD/bpm1prod/datafile/users.307.1117356897
+input datafile file number=00044 name=+DG_BPM1PROD/bpm1prod/datafile/users.310.1118420693
+input datafile file number=00046 name=+DG_BPM1PROD/bpm1prod/datafile/users.312.1124013451
+input datafile file number=00010 name=+DG_BPM1PROD/bpm1prod/datafile/users.265.1046453427
+input datafile file number=00004 name=+DG_BPM1PROD/bpm1prod/datafile/users.261.1046370427
+input datafile file number=00019 name=+DG_BPM1PROD/bpm1prod/datafile/users.274.1046540089
+input datafile file number=00027 name=+DG_BPM1PROD/bpm1prod/datafile/users.259.1046368987
+input datafile file number=00047 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.313.1149177847
+input datafile file number=00049 name=+DG_BPM1PROD/bpm1prod/datafile/users.315.1168970709
+input datafile file number=00051 name=+DG_BPM1PROD/bpm1prod/datafile/users.317.1168971161
+input datafile file number=00053 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_vmax.319.1176199095
+input datafile file number=00055 name=+DG_BPM1PROD/bpm1prod/datafile/users.321.1178616715
+input datafile file number=00057 name=+DG_BPM1PROD/bpm1prod/datafile/users.323.1180689839
+input datafile file number=00059 name=+DG_BPM1PROD/bpm1prod/datafile/users.325.1185102431
+input datafile file number=00006 name=+DG_BPM1PROD/bpm1prod/datafile/bpm_data.260.1046369509
+input datafile file number=00036 name=+DG_BPM1PROD/bpm1prod/datafile/sysaux.302.1074786821
+input datafile file number=00037 name=+DG_BPM1PROD/bpm1prod/datafile/sysaux.303.1074786929
+input datafile file number=00061 name=+DG_BPM1PROD/bpm1prod/datafile/users.327.1187004499
+input datafile file number=00034 name=+DG_BPM1PROD/bpm1prod/datafile/undotb1.288.1047464031
+channel ch2: starting piece 1 at 24-JUN-25
+RMAN-03009: failure of backup command on ch1 channel at 06/24/2025 01:32:57
+ORA-19506: failed to create sequential file, name="3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250624_ij3sp9bf_1_1.vab", parms=""
+ORA-27028: skgfqcre: sbtbackup returned error
+ORA-19511: Error received from media manager layer, error text:
+   TCP stream was closed
+--tr:Failed to start source agent.
+--tr:Failed to start shared source agent.
+--tr:Failed to get agents session.
+--tr:Failed to create RMAN backup file session.
+channel ch1 disabled, job failed on it will be run on another channel
+released channel: ch1
+released channel: ch2
+RMAN-00571: ===========================================================
+RMAN-00569: =============== ERROR MESSAGE STACK FOLLOWS ===============
+RMAN-00571: ===========================================================
+RMAN-03002: failure of backup command at 06/24/2025 01:36:23
+ORA-19506: failed to create sequential file, name="3fc90592-511f-4200-aedc-48597064f4c8/RMAN_incr_1562024455_BPM1PROD_20250624_ik3sp9bg_1_1.vab", parms=""
+ORA-27028: skgfqcre: sbtbackup returned error
+ORA-19511: Error received from media manager layer, error text:
+   TCP stream was closed
+--tr:Failed to start source agent.
+--tr:Failed to start shared source agent.
+--tr:Failed to get agents session.
+--tr:Failed to create RMAN backup file session.
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18101   Full    8.00M      SBT_TAPE    00:00:08     22-JUN-25      
+        BP Key: 31596   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_1562024455_BPM1PROD_20250622_i83skbpk_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 22-JUL-25      
+  SPFILE Included: Modification time: 22-JUN-25
+  SPFILE db_unique_name: BPM1PROD
+
+RMAN> 
+
+List of Backup Sets
+===================
+
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18097   Incr 0  16.00M     SBT_TAPE    00:00:21     22-JUN-25      
+        BP Key: 31592   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_1562024455_BPM1PROD_20250622_i73skbbl_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 22-JUL-25      
+  Control File Included: Ckp SCN: 47075614932   Ckp time: 22-JUN-25
+
+BS Key  Type LV Size       Device Type Elapsed Time Completion Time
+------- ---- -- ---------- ----------- ------------ ---------------
+18105   Full    16.00M     SBT_TAPE    00:00:08     22-JUN-25      
+        BP Key: 31600   Status: AVAILABLE  Compressed: YES  Tag: FULL_BPM1PROD_22062025_01H00
+        Handle: 3fc90592-511f-4200-aedc-48597064f4c8/RMAN_full_1562024455_BPM1PROD_20250622_ic3skbqo_1_1.vab   Media: {3fc90592-511f-4200-aedc-48597064f4c8}
+        Keep: BACKUP_LOGS        Until: 22-JUL-25      
+  Control File Included: Ckp SCN: 47075615444   Ckp time: 22-JUN-25
+
+RMAN> 
+
+Recovery Manager complete.

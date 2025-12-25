@@ -1,0 +1,41 @@
+sudo -u root  /usr/sbin/iscsiadm --mode node -T iqn.1992-08.com.netapp:sn.e818ff39f69f11ee89c15f3c9b6e2460:vs.3 --login
+/usr/sbin/pvscan
+/usr/sbin/vgscan
+/usr/sbin/lvscan
+
+/usr/sbin/vgchange -an autcobolvg
+/usr/sbin/vgexport autcobolvg
+/usr/sbin/vgchange -ay autcobolvg
+/usr/sbin/vgimport autcobolvg
+
+/usr/sbin/vgchange -an authomevg
+/usr/sbin/vgexport authomevg
+/usr/sbin/vgchange -ay authomevg
+/usr/sbin/vgimport authomevg
+
+/usr/sbin/vgchange -an authomectrlvg
+/usr/sbin/vgexport authomectrlvg
+/usr/sbin/vgchange -ay authomectrlvg
+/usr/sbin/vgimport authomectrlvg
+
+/usr/sbin/vgchange -an autddvg
+/usr/sbin/vgexport autddvg
+/usr/sbin/vgchange -ay autddvg
+/usr/sbin/vgimport autddvg
+
+/usr/sbin/vgchange -an autjposvg
+/usr/sbin/vgexport autjposvg
+/usr/sbin/vgchange -ay autjposvg
+/usr/sbin/vgimport autjposvg
+
+/usr/sbin/vgchange -an autcoboltmpvg
+/usr/sbin/vgexport autcoboltmpvg
+/usr/sbin/vgchange -ay autcoboltmpvg
+/usr/sbin/vgimport autcoboltmpvg
+
+/usr/bin/mount /dev/mapper/autcobolvg-autcobollv /autoriza/usr/cobol/
+/usr/bin/mount /dev/mapper/authomevg-authomelv /autoriza/home
+/usr/bin/mount /dev/mapper/authomectrlvg-authomectrllv /autoriza/home/octrl-m
+/usr/bin/mount /dev/mapper/autjposvg-autjposlv /autoriza/usr/cobol/cod_aut/jpos
+/usr/bin/mount /dev/mapper/autddvg-autddlv /autoriza/usr/cobol/cod_aut/datadog
+/usr/bin/mount /dev/mapper/autcoboltmpvg-autcoboltmplv /autoriza/usr/cobol/tmp
